@@ -16,7 +16,7 @@ func TestSick(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := Sick(tt.args.name)
+			got := Sick(tt.args.name, tt.args.killed)
             if got.name != tt.wantName || got.killed != tt.wantKilled {
 				t.Errorf("name Sick() = %v, want name:%v killed: %v\n", got, tt.wantName, tt.wantKilled)
 			}
