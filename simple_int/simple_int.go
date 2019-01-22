@@ -6,10 +6,10 @@ import (
 )
 
 func SimpleInt(i int) int {
-	return suck(i)
+	return suck(&i)
 }
 
-func suck(n int) int {
-	_, _ = fmt.Fprintf(os.Stdout, "suck: %v\n", n)
-	return n
+func suck(n *int) int {
+	_, _ = fmt.Fprintf(os.Stdout, "n: %v   *n: %v \n", n, *n)
+	return *n
 }
