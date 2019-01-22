@@ -10,9 +10,9 @@ func TestSick(t *testing.T) {
 		wantName string
         wantKilled int
 	}{
-        {"just one", Suck{"abe fuckzo", 1000}, "abe fuckzo", 1000},
-        {"yet another one", Suck{"Kim Jongilue", 30}, "Kim Jongilue", 30},
-        {"sucked one", Suck{"sushitaro", 40000}, "sushitaro", 40000},
+        {"just one", Suck{"abe fuckzo", 1000}, "ABE FUCKZO", 2000},
+        {"yet another one", Suck{"Kim Jongilue", 30}, "KIM JONGILUE", 60},
+        {"sucked one", Suck{"sushitaro", 40000}, "SUSHITARO", 80000},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
