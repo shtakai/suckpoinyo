@@ -23,3 +23,7 @@ func moron(suck *Suck) Suck {
 	fmt.Println(&suck)
 	return *suck
 }
+
+func SwapSick(suck1, suck2 Suck) (Suck, Suck){
+	return suck1, suck2
+}
