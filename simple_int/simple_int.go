@@ -1,9 +1,9 @@
-package simple_int
+package simpleInt
 
-func SimpleInt(i int) int{
-    //var i int
-    //suck(i)
-    return 1
+func SimpleInt(i int) int {
+	//var i int
+	//suck(i)
+	return i
 }
 
 //func suck(n int) {
