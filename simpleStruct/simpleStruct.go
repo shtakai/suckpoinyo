@@ -7,11 +7,7 @@ type Suck struct{
 	killed int
 }
 
-func Sick(name string, killed int) Suck {
-	suck := Suck{
-		name: name,
-		killed: killed,
-	}
+func Sick(suck Suck) Suck {
 	fmt.Println(suck)
 	return suck
 }
