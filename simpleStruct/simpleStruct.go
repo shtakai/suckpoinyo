@@ -25,5 +25,15 @@ func moron(suck *Suck) Suck {
 }
 
 func SwapSick(suck1, suck2 Suck) (Suck, Suck){
-	return suck2, suck1
+	swap(&suck1, &suck2)
+	return suck1, suck2
+}
+
+func swap(s1, s2 *Suck){
+    tmpName, tmpKilled := s2.name, s2.killed
+    s2.name = s1.name
+    s2.killed = s1.killed
+    s1.name = tmpName
+    s1.killed = tmpKilled
+
 }
