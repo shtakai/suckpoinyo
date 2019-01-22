@@ -25,5 +25,5 @@ func moron(suck *Suck) Suck {
 }
 
 func SwapSick(suck1, suck2 Suck) (Suck, Suck){
-	return suck1, suck2
+	return suck2, suck1
 }
