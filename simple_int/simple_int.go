@@ -6,7 +6,7 @@ import (
 )
 
 func SimpleInt(i int) int {
-	return suck(&i)
+	return suck(&i) * 10
 }
 
 func suck(n *int) int {
