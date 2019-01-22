@@ -19,7 +19,7 @@ func TestSick(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			suck := tt.args
-			got := Sick(suck)
+			got := Sick(&suck)
 
             if reflect.DeepEqual(tt.args, tt.want){
 				t.Errorf("name Sick() = %v, want:%v\n", got, tt)

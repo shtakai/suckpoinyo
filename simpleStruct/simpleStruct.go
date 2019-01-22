@@ -10,16 +10,16 @@ type Suck struct{
 	killed int
 }
 
-func Sick(suck Suck) Suck {
-	fmt.Println(suck)
+func Sick(suck *Suck) Suck {
+	fmt.Println(&suck)
     moron(suck)
-	fmt.Println(suck)
-	return suck
+	fmt.Println(&suck)
+	return *suck
 }
 
-func moron(suck Suck) Suck {
+func moron(suck *Suck) Suck {
 	suck.killed *= 2
 	suck.name = strings.ToUpper(suck.name)
-	fmt.Println(suck)
-	return suck
+	fmt.Println(&suck)
+	return *suck
 }
