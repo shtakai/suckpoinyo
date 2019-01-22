@@ -9,7 +9,7 @@ type Suck struct{
 
 func Sick() Suck {
 	suck := Suck{
-		name: "sashimi",
+		name: "sushitaro",
 		killed: 4000,
 	}
 	fmt.Println(suck)
