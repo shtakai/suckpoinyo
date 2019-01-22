@@ -1,11 +1,16 @@
 package simpleInt
 
+import (
+	"fmt"
+	"os"
+)
+
 func SimpleInt(i int) int {
-	suck(i)
+	suck(&i)
 	return i
 }
 
-func suck(n int) {
-	//_, _ = fmt.Fprintf(os.Stdout, "n: %v   *n: %v \n", n, *n)
-	n = n * 10
+func suck(n *int) {
+	_, _ = fmt.Fprintf(os.Stdout, "n: %v   *n: %v \n", n, *n)
+	*n = *n * 10
 }
